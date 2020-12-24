@@ -1,7 +1,7 @@
 import React from 'react';
 import { Footer } from '../components';
 
-export function FotterContainer() {
+export function FooterContainer() {
     return (
         <Footer>
             <Footer.Title> Questions ?  Contact us.</Footer.Title>
@@ -12,7 +12,7 @@ export function FotterContainer() {
                     <Footer.Link href="#">Investor Relations</Footer.Link>
                     <Footer.Link href="#">Ways to Watch</Footer.Link>
                     <Footer.Link href="#">Coporate Information</Footer.Link>
-                    <Footer.Link href="#">Netflix Originals</Footer.Link>
+                    <Footer.Link href="#">Neo-Films Originals</Footer.Link>
                 </Footer.Column>
                 <Footer.Column>
                     <Footer.Link href="#">Help Centre</Footer.Link>
@@ -34,7 +34,7 @@ export function FotterContainer() {
                 </Footer.Column>
             </Footer.Row>
             <Footer.Break/>
-            <Footer.Text>Netflix United Kingdom</Footer.Text>
+            <Footer.Text>Neo-Films United Kingdom</Footer.Text>
         </Footer>
     );
 }

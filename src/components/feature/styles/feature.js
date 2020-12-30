@@ -1,9 +1,10 @@
 import styled from 'styled-components/macro';
 
 export const Container = styled.div`
-    display:flex;
+    display: flex;
     flex-direction: column;
     border-bottom: 8px solid #222;
+    margin: 0 auto;
     text-align: center;
     padding: 165px 45px;
 `;
@@ -16,7 +17,7 @@ export const Title = styled.h1`
     margin: auto;
 
     @media (max-width: 600px) {
-        font-size: 35px
+        font-size: 35px;
     }
 `;
 

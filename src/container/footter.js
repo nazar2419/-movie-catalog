@@ -34,7 +34,7 @@ export function FooterContainer() {
                 </Footer.Column>
             </Footer.Row>
             <Footer.Break/>
-            <Footer.Text>Neo-Films United Kingdom</Footer.Text>
+            <Footer.Text>Neo-Films Ukraine</Footer.Text>
         </Footer>
     );
 }

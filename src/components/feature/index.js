@@ -1,14 +1,14 @@
 import React from 'react';
 import { Container, Title, SubTitle} from './styles/feature';
 
-export default function Feature({ chidren, ...restProps}) {
-    return <Container {...restProps}>{chidren}</Container>
+export default function Feature({ children, ...restProps}) {
+    return <Container {...restProps}>{children}</Container>
 }
 
-Feature.Title = function FeatureTitle({ chidren, ...restProps }) {
-    return <Title {...restProps}>{chidren}</Title>
+Feature.Title = function FeatureTitle({ children, ...restProps }) {
+    return <Title {...restProps}>{children}</Title>
 };
 
-Feature.SubTitle = function FeatureSubTitle({ chidren, ...restProps }) {
-    return <SubTitle {...restProps}>{chidren}</SubTitle>
+Feature.SubTitle = function FeatureSubTitle({ children, ...restProps }) {
+    return <SubTitle {...restProps}>{children}</SubTitle>
 };

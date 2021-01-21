@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Accordion /> opens and closes the <Accordion /> component 1`] = `
+<div
+  class="acordion__Container-sc-16d6ta7-0 kQQbiI"
+>
+  <div
+    class="acordion__Inner-sc-16d6ta7-4 dpqKUK"
+  >
+    <h1
+      class="acordion__Title-sc-16d6ta7-5 fyNpBd"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        What is Neo-films?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        How much does Neo-films cost?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        Where can I watch?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        How do I cancel?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        What can I watch on Neo-films?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Accordion /> renders the <Accordion /> with populated data 1`] = `
+<div
+  class="acordion__Container-sc-16d6ta7-0 kQQbiI"
+>
+  <div
+    class="acordion__Inner-sc-16d6ta7-4 dpqKUK"
+  >
+    <h1
+      class="acordion__Title-sc-16d6ta7-5 fyNpBd"
+    >
+      Frequently Asked Questions
+    </h1>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        What is Neo-films?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        How much does Neo-films cost?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        Where can I watch?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        How do I cancel?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+    <div
+      class="acordion__Item-sc-16d6ta7-1 ePqtqW"
+    >
+      <div
+        class="acordion__Header-sc-16d6ta7-2 jYkTFm"
+      >
+        What can I watch on Neo-films?
+        <img
+          alt="Open"
+          src="/images/icons/add.png"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

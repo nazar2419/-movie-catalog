@@ -6,7 +6,7 @@ import { FooterContainer } from '../container/footter';
 import { Form } from '../components';
 import * as ROUTES from '../constants/routes';
 
-export default function Signup() {
+export default function SignUp() {
     const history = useHistory();
     const { firebase } = useContext(FirebaseContext);
 
@@ -20,7 +20,7 @@ export default function Signup() {
     const  handleSignup = (event) => {
         event.preventDefault();
 
-        firebase
+        return firebase
             .auth()
             .createUserWithEmailAndPassword(emailAddress, password)
             .then((result) =>
@@ -38,7 +38,7 @@ export default function Signup() {
                 setEmailAddress('');
                 setPassword('');
                 setError(error.message);
-            })
+            });
     };
 
     return (
@@ -67,20 +67,19 @@ export default function Signup() {
                         onChange={({ target }) => setPassword(target.value)}
                     
                     />
-                    <Form.Submit disabled={isInvalid} type="submit">
+                    <Form.Submit data-testid="sign-up" disabled={isInvalid} type="submit">
                             Sign Up
                     </Form.Submit>
+                </Form.Base>
                     <Form.Text>
                         Already a user? <Form.Link to="/signin">Sign in now</Form.Link>
                     </Form.Text>
                     <Form.TextSmall>
-                        This page is protected by Google reCAPTCHA to ensure 
-                            you're not a bot. Learn more.
+                        This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
                     </Form.TextSmall>
-                </Form.Base>
             </Form>
-        </HeaderContainer>
-            <FooterContainer/>
+            </HeaderContainer>
+         <FooterContainer/>
         </>
     );
 }

@@ -6,9 +6,10 @@ import { HeaderContainer } from '../container/header';
 import { Form } from '../components';
 import * as ROUTES from '../constants/routes';
 
-export default function Signin() {
+export default function SignIn() {
   const history = useHistory();
   const { firebase } = useContext(FirebaseContext); 
+
   const [emailAddress, setEmailAddress] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError]  = useState('');
@@ -20,7 +21,7 @@ export default function Signin() {
     event.preventDefault();
 
     // firebase work here!
-    firebase
+    return firebase
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
       .then(() => {
@@ -38,7 +39,7 @@ export default function Signin() {
       <HeaderContainer>
         <Form>
            <Form.Title>Sign In</Form.Title>
-           {error && <Form.Error>{error}</Form.Error>}
+           {error && <Form.Error data-testid="error">{error}</Form.Error>}
         
           <Form.Base onSubmit={handleSignIn} method="POST">
             <Form.Input
@@ -55,7 +56,7 @@ export default function Signin() {
               onChange={({ target }) => setPassword(target.value)}
             />
 
-            <Form.Submit disabled={isInvalid} type="submit">
+            <Form.Submit data-testid="sign-in" disabled={isInvalid} type="submit">
               Sign In
             </Form.Submit>
           </Form.Base>

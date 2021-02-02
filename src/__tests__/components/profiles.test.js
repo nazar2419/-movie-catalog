@@ -18,7 +18,7 @@ describe('<Profiles/>', () => {
     </Profiles>
     );
 
-    expect(getByText("Who's watching?"));
+    expect(getByText("Who's watching?")).toBeTruthy();
     expect(getByTestId('profile-picture')).toBeTruthy();
     expect(getByText('Nazar')).toBeTruthy();
     expect(container.firstChild).toMatchSnapshot();
@@ -40,8 +40,8 @@ describe('<Profiles/>', () => {
     </Profiles>
     );
 
-    expect(getByText("Who's watching?"));
-    expect(getByTestId('profile-picture')).toBeTruthy();
+    expect(getByText("Who's watching?")).toBeTruthy();
+    expect(getByTestId('profile-picture-misc')).toBeTruthy();
     expect(getByText('Nazar')).toBeTruthy();
     expect(container.firstChild).toMatchSnapshot();
     });

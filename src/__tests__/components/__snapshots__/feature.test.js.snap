@@ -24,7 +24,7 @@ exports[`<Feature /> renders the <Feature /> with just a title 1`] = `
 </div>
 `;
 
-exports[`<Feature /> renders the <Feature /> wuth populated data 1`] = `
+exports[`<Feature /> renders the <Feature /> with populated data 1`] = `
 <div
   class="feature__Container-sc-6swrp6-0 fQZxzu"
 >

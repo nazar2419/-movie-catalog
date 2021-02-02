@@ -5,8 +5,8 @@ import { Form } from '../../components';
 jest.mock('react-router-dom');
 
 describe('<Form />', () => {
-    it('renders the <Form /> with populated', () => {
-        const { container, getByText, getByPlaceholderText } = render(
+    it('renders the <Form /> with populated data', () => {
+        const { container, getByText, getByPlaceholderText }=render(
         <Form>
           <Form.Title>Sign In Now</Form.Title>
 
@@ -14,17 +14,16 @@ describe('<Form />', () => {
             <Form.Input placeholder="Email address" onChange={() => {}} />
             <Form.Input
               type="password"
-              autoComplete="off"
               placeholder="Password"
               onChange={() => {}}
             />
-            <Form.Submit  type="submit" disabled>
+            <Form.Submit type="submit" disabled>
               Sign In
             </Form.Submit>
           </Form.Base>
 
           <Form.Text>
-            New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
+            New to Neo-films? <Form.Link to="/signup">Sign up now.</Form.Link>
           </Form.Text>
           <Form.TextSmall>
             This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.
@@ -45,14 +44,15 @@ describe('<Form />', () => {
   });
 
   it('renders the <Form /> with an error', () => {
-    const {container, getByText, queryByText } = render (
+    const {container, getByText, queryByText } = 
+    render(
       <Form>
         <Form.Error>Your email address is already being used</Form.Error>
         <Form.Submit type="submit">Sign In</Form.Submit>
       </Form>
     );
     expect(getByText('Your email address is already being used')).toBeTruthy();
-    expect(queryByText("Sign In").disabled).toBeFalsy();
+    expect(queryByText('Sign In').disabled).toBeFalsy();
     expect(container.firstChild).toMatchSnapshot();
-  })
+  });
 });
